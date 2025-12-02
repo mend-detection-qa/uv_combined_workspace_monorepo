@@ -1,0 +1,20 @@
+[project]
+name = "workspace-monorepo"
+version = "1.0.0"
+description = "Combined integration test: Workspace monorepo with internal dependencies"
+requires-python = ">=3.10"
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.8.0",
+    "ruff>=0.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
