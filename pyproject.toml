@@ -15,3 +15,7 @@ dev = [
     "ruff>=0.3.0",
 ]
 
+[tool.uv.sources]
+workspace-core = { workspace = true }
+workspace-api = { workspace = true }
+workspace-cli = { workspace = true }
